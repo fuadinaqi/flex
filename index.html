@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .navbar {
+      width: 100%;
+      height: 60px;
+      background-color: rgb(212, 212, 212);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar > .item {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      flex: 1;
+    }
+
+    .navbar > .item:first-child {
+      margin-left: 20px;
+    }
+
+    .navbar > .item:last-child {
+      margin-right: 20px;
+    }
+
+    .item > .burger {
+      width: 30px;
+      height: 30px;
+      background-color: aquamarine;
+    }
+
+    .item:nth-child(2) {
+      flex: 2;
+      justify-content: center;
+    }
+
+    .item > .search {
+      background-color: #fff;
+      width: 80%;
+      height: 30px;
+    }
+
+    .item > .icon-mic {
+      background-color: bisque;
+      width: 30px;
+      height: 30px;
+    }
+
+    .item:last-child {
+      justify-content: flex-end;
+    }
+
+    .item > .icon {
+      width: 30px;
+      height: 30px;
+      background-color: cadetblue;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="item">
+      <div class="burger"></div>
+      <div class="logo-youtube">Premium</div>
+    </div>
+    <div class="item">
+      <div class="search"></div>
+      <div class="icon-mic"></div>
+    </div>
+    <div class="item">
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div class="icon"></div>
+    </div>
+  </div>
+</body>
+</html>
